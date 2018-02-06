@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { NbThemeModule } from '@nebular/theme';
 import { NbEmailPassAuthProvider, NbAuthModule } from '@nebular/auth';
+import { NB_AUTH_TOKEN_WRAPPER_TOKEN, NbAuthJWTToken } from '@nebular/auth';
 
 @NgModule({
   imports: [
@@ -26,6 +27,7 @@ import { NbEmailPassAuthProvider, NbAuthModule } from '@nebular/auth';
 
   ],
   providers: [
+    { provide: NB_AUTH_TOKEN_WRAPPER_TOKEN, useClass: NbAuthJWTToken },
   ],
   declarations: [
   ],

@@ -15,4 +15,7 @@ export const authOptions: any = {
   resetPass: {
     endpoint: '/auth/reset-pass',
   },
+  token: {
+    key: 'token',
+  },
 };
