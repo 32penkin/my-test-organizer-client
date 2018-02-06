@@ -1,19 +1,16 @@
 export const authOptions: any = {
   baseEndpoint: 'http://localhost:8080',
   login: {
+    redirectDelay: 500,
     endpoint: '/auth/sign-in',
   },
   register: {
+    redirectDelay: 500,
     endpoint: '/auth/sign-up',
   },
   logout: {
+    redirectDelay: 500,
     endpoint: '/auth/sign-out',
-  },
-  requestPass: {
-    endpoint: '/auth/request-pass',
-  },
-  resetPass: {
-    endpoint: '/auth/reset-pass',
   },
   token: {
     key: 'token',

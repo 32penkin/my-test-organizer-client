@@ -2,8 +2,9 @@ import {ModuleWithProviders, NgModule} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { NbLayoutModule } from '@nebular/theme';
+import { NbLayoutModule, NbUserModule } from '@nebular/theme';
 import { AppLayoutComponent } from './components/app-layout/app-layout.component';
+import { AppHeaderComponent } from './components/app-header/app-header.component';
 
 const BASE_MODULES = [
   CommonModule,
@@ -13,11 +14,13 @@ const BASE_MODULES = [
 ];
 
 const NEBULAR_MODULES = [
-  NbLayoutModule
+  NbLayoutModule,
+  NbUserModule
 ];
 
 const COMPONENTS = [
   AppLayoutComponent,
+  AppHeaderComponent,
 ];
 
 @NgModule({
