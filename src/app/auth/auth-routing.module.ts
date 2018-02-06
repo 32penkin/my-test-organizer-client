@@ -27,14 +27,6 @@ export const routes: Routes = [
         path: 'logout',
         component: NbLogoutComponent,
       },
-      {
-        path: 'request-password',
-        component: NbRequestPasswordComponent,
-      },
-      {
-        path: 'reset-password',
-        component: NbResetPasswordComponent,
-      },
     ],
   },
 ];
