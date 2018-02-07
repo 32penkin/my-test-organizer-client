@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AuthModule } from './auth/auth.module';
 import { ThemeModule } from './@theme/theme.module';
+import { LandingModule } from './landing/landing.module';
+import { NbThemeModule } from '@nebular/theme';
+import { PagesModule } from './pages/pages.module';
 
 
 @NgModule({
@@ -12,8 +15,11 @@ import { ThemeModule } from './@theme/theme.module';
     AppComponent
   ],
   imports: [
+    NbThemeModule.forRoot({ name: 'default' }),
     BrowserModule,
     AppRoutingModule,
+    LandingModule,
+    PagesModule,
     ThemeModule.forRoot(),
     AuthModule.forRoot(),
   ],

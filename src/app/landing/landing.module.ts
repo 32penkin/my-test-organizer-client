@@ -5,7 +5,7 @@ import { LandingComponent } from './landing/landing.component';
 
 @NgModule({
   imports: [
-    // ThemeModule,
+    ThemeModule,
     LandingRoutingModule,
   ],
   declarations: [
